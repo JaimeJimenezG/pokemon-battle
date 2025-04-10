@@ -1,0 +1,26 @@
+name: PokemonBattle
+options:
+  bundleIdPrefix: com.pokemon
+  deploymentTarget:
+    iOS: 15.0
+    macOS: 12.0
+
+targets:
+  pokemon-battle:
+    type: application
+    platform: [iOS, macOS]
+    sources:
+      - path: Sources/pokemon-battle
+    info:
+      path: Sources/pokemon-battle/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Pokemon Battle
+        LSApplicationCategoryType: public.app-category.games
+        UILaunchStoryboardName: ""
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pokemon.battle
+        SWIFT_VERSION: 5.0
+        CODE_SIGN_STYLE: Automatic 

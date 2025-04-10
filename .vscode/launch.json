@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:pokemon-battle}",
+            "name": "Debug pokemon-battle",
+            "program": "${workspaceFolder:pokemon-battle}/.build/debug/pokemon-battle",
+            "preLaunchTask": "swift: Build Debug pokemon-battle"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:pokemon-battle}",
+            "name": "Release pokemon-battle",
+            "program": "${workspaceFolder:pokemon-battle}/.build/release/pokemon-battle",
+            "preLaunchTask": "swift: Build Release pokemon-battle"
+        }
+    ]
+}
